@@ -1,0 +1,19 @@
+{% extends 'extends/base.html' %}
+{% block content %}
+    <h1>Count of Tracks - {{ count }}</h1>
+    <table class="table table-striped" border="1">
+        <thead>
+            <tr>
+                <th>Track Name</th>
+                <th>duration</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for track in tracks %}
+                <tr>
+                    <td>{{ track.track_name }}</td>
+                    <td>{{ track.duration }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+{% endblock %}

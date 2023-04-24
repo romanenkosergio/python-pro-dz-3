@@ -1,0 +1,12 @@
+CREATE TABLE customers (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    first_name TEXT NOT NULL,
+    last_name TEXT NOT NULL,
+    age INTEGER NOT NULL
+);
+CREATE TABLE tracks (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    track_name TEXT NOT NULL,
+    duration DATETIME NOT NULL
+);
+
